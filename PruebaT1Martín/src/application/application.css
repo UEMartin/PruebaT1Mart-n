@@ -1,0 +1,13 @@
+
+.skyTop{
+	-fx-background-image: url("../view/assets/sky.jpeg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.loginBtn{
+	-fx-background-color: #FEA500;
+}
+.loginBtn:hover{
+	-fx-background-color: #ffffff;
+}

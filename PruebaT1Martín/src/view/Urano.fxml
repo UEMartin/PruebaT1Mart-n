@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="win2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlRocket">
+   <children>
+      <VBox layoutY="41.0" prefHeight="459.0" prefWidth="600.0" spacing="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="602.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/sky.jpeg" />
+               </image>
+               <effect>
+                  <Reflection bottomOpacity="1.0" fraction="1.0" topOpacity="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="239.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/sky.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <ColorAdjust contrast="-0.31" hue="0.07" saturation="-0.02" />
+         </effect>
+      </VBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.46" prefHeight="142.0" prefWidth="256.0" style="-fx-background-color: grey;" text="Label" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="7.0" prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: #FEA500;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton layoutX="557.0" layoutY="13.0" onAction="#closeApp" prefHeight="23.0" prefWidth="22.0" style="-fx-background-radius: 13; -fx-background-color: #c98511;" text="x" textFill="#ffffffc9" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
